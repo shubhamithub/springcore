@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.sprinframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- this is our first bean -->
+
+	<bean class="com.springcore.Student" name="student1">
+		<property name="studentId">
+			<value>1</value>
+		</property>
+		<property name="studentName">
+			<value>king</value>
+		</property>
+		<property name="studentAddress">
+			<value>India</value>
+		</property>
+	</bean>
+
+	<!-- this is our second bean -->
+
+	<bean class="com.springcore.Student" name="student2">
+		<property name="studentId" value="2" />
+
+		<property name="studentName" value="krishna" />
+
+		<property name="studentAddress" value="Noida" />
+
+	</bean>
+
+	<!-- this is our third bean -->
+
+	<bean class="com.springcore.Student" name="student3"
+		p:studentId="3" p:studentName="vikash" p:studentAddress="khoda" />
+
+
+</beans>
