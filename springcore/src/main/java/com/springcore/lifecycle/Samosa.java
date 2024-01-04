@@ -21,14 +21,13 @@ public class Samosa {
 	public String toString() {
 		return "Samosa [price=" + price + "]";
 	}
-	
+
 	public void init() {
 		System.out.println("Inside init method");
 	}
-	
+
 	public void destroy() {
 		System.out.println("Inside destroy method");
 	}
-	
 
 }
