@@ -7,8 +7,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ApplicationContext context=new ClassPathXmlApplicationContext("com/springcore/steriotype/sterioconfig.xml");
-		Student student=(Student) context.getBean("ob");
+		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/steriotype/sterioconfig.xml");
+		Student student = (Student) context.getBean("ob");
 		System.out.println(student);
 
 	}
